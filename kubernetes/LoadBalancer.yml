@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: equipo4-app-credit-loadbalancer
+  labels: 
+    app: equipo4-app-credit
+spec:
+  type: LoadBalancer 
+  selector:
+    app: equipo4-app-credit
+  ports: 
+    - port: 8090
+      targetPort: 8090

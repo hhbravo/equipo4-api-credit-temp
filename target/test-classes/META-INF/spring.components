@@ -1,0 +1,6 @@
+#
+#Fri Apr 16 19:28:24 COT 2021
+com.bcp.card.credit.dao.CrediCardRespository=org.springframework.data.repository.Repository
+com.bcp.card.credit.business.impl.CreditCardServiceImpl=org.springframework.stereotype.Component
+com.bcp.card.credit.expose.web.CreditCardController=org.springframework.stereotype.Component
+com.bcp.card.CreditApplication=org.springframework.stereotype.Component

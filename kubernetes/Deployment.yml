@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: equipo4-app-credit-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: equipo4-app-credit
+  template: 
+    metadata: # Dictionary
+      name: equipo4-app-credit-pod
+      labels: # Dictionary 
+        app: equipo4-app-credit       
+    spec:
+      containers: # List
+        - name: equipo4-app-credit-container
+          image: hanshb/equipo4-app-credit:1.0
+          ports:
+            - containerPort: 8090
